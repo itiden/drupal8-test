@@ -20,7 +20,7 @@
         "drupal/core": "8.0.*",
         "drush/drush": "dev-master",
         "drupal/console": "dev-master",
-        "drupal/devel": "8.*"
+        "drupal/devel": "8.1.*@dev"
     },
     "require-dev": {
         "behat/mink": "~1.6",
