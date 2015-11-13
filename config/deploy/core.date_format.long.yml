@@ -1,0 +1,8 @@
+uuid: 468c3946-e42c-4dfa-aa06-6d03eb11523f
+langcode: en
+status: true
+dependencies: {  }
+id: long
+label: 'Default long date'
+locked: false
+pattern: 'l, F j, Y - H:i'

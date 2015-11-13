@@ -1,0 +1,10 @@
+uuid: ca507bf8-e82e-4e9c-b33f-63e94b1621e5
+langcode: en
+status: true
+dependencies: {  }
+id: feedback
+label: 'Website feedback'
+recipients:
+  - andreas@itiden.se
+reply: ''
+weight: 0
