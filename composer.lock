@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "58d801c202362d6cf9bb75442c3b26f8",
-    "content-hash": "660c7be317d87b5b6d755b0611a15095",
+    "hash": "bafb6bd96e8930500b0e67e15917281a",
+    "content-hash": "69531cda18c041c7f1eadea672d77304",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -666,12 +666,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/DrupalConsole.git",
-                "reference": "d8af003b44b72e3120adb234b00c2b3d6d11a757"
+                "reference": "930a549a8f35e0007687d2262cdb46b7271bb867"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/20006ae753894a771ad70f24be9ce7ae4539ccba",
-                "reference": "d8af003b44b72e3120adb234b00c2b3d6d11a757",
+                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/930a549a8f35e0007687d2262cdb46b7271bb867",
+                "reference": "930a549a8f35e0007687d2262cdb46b7271bb867",
                 "shasum": ""
             },
             "require": {
@@ -742,7 +742,7 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2015-11-13 07:29:24"
+            "time": "2015-11-13 14:16:37"
         },
         {
             "name": "drupal/core",
@@ -958,12 +958,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "d5117461a8bcf705194e5029bb35f9862167ea28"
+                "reference": "365d1fb5d1555210bf2570ae7304f11589c6a2d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/d5117461a8bcf705194e5029bb35f9862167ea28",
-                "reference": "d5117461a8bcf705194e5029bb35f9862167ea28",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/365d1fb5d1555210bf2570ae7304f11589c6a2d2",
+                "reference": "365d1fb5d1555210bf2570ae7304f11589c6a2d2",
                 "shasum": ""
             },
             "require": {
@@ -1039,7 +1039,7 @@
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-            "time": "2015-11-12 14:07:28"
+            "time": "2015-11-13 15:32:16"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -5053,7 +5053,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drush/drush": 20,
-        "drupal/console": 20
+        "drupal/console": 20,
+        "drupal/devel": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
