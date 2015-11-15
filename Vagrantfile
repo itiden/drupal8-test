@@ -35,6 +35,8 @@ Vagrant.configure(2) do |config|
     curl -sS https://getcomposer.org/installer | php
     sudo composer self-update
 
+    sudo sed 's/\/var\/www\/default/\/var\/www\/web/' /etc/nginx/conf.d/default.conf
+
   SHELL
 
 end

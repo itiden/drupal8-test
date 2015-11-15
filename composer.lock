@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bafb6bd96e8930500b0e67e15917281a",
-    "content-hash": "69531cda18c041c7f1eadea672d77304",
+    "hash": "a5048b14b6efa428f35a1aa28fcae6ad",
+    "content-hash": "55c9ce199bbcdd83fcd319e883ca34e8",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -670,7 +670,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/930a549a8f35e0007687d2262cdb46b7271bb867",
+                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/9ac228621a84e0ddba4d95fa6f4e783eb3c052ac",
                 "reference": "930a549a8f35e0007687d2262cdb46b7271bb867",
                 "shasum": ""
             },
@@ -962,7 +962,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/365d1fb5d1555210bf2570ae7304f11589c6a2d2",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/6bb5ea5178b5165fdc7a16aecec1626d5ce4e823",
                 "reference": "365d1fb5d1555210bf2570ae7304f11589c6a2d2",
                 "shasum": ""
             },
@@ -3560,6 +3560,57 @@
             "time": "2015-11-05 12:49:06"
         },
         {
+            "name": "vlucas/phpdotenv",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "c10040e0df17d2ee88e9212b50cbe9319e878f59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/c10040e0df17d2ee88e9212b50cbe9319e878f59",
+                "reference": "c10040e0df17d2ee88e9212b50cbe9319e878f59",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dotenv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Vance Lucas",
+                    "email": "vance@vancelucas.com",
+                    "homepage": "http://www.vancelucas.com"
+                }
+            ],
+            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+            "homepage": "http://github.com/vlucas/phpdotenv",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "time": "2015-10-28 18:53:35"
+        },
+        {
             "name": "zendframework/zend-diactoros",
             "version": "1.1.4",
             "source": {
@@ -5054,7 +5105,8 @@
     "stability-flags": {
         "drush/drush": 20,
         "drupal/console": 20,
-        "drupal/devel": 20
+        "drupal/devel": 20,
+        "vlucas/phpdotenv": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

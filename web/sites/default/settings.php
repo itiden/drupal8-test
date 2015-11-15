@@ -1,4 +1,10 @@
 <?php
+$root_path = dirname(__DIR__) . '/../../';
+
+require "{$root_path}/vendor/autoload.php";
+
+$dotenv = new Dotenv\Dotenv($root_path);
+$dotenv->load();
 
 /**
  * @file
@@ -683,11 +689,11 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 #   include __DIR__ . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'drupal8',
-  'username' => 'root',
-  'password' => 'vagrant',
+  'database' => getenv('DATABASE_NAME'),
+  'username' => getenv('DATABASE_USERNAME'),
+  'password' => getenv('DATABASE_PASSWORD'),
   'prefix' => '',
-  'host' => 'localhost',
+  'host' => getenv('DATABASE_HOST'),
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
