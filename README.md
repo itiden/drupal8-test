@@ -1,6 +1,6 @@
 # Drupal 8 test
 - Clone the repository.
-- Make a copy of `.env.example` and name it `.env` and add the correct data for each site.
+- Make a copy of `.env.example` and name it `.env` and add the correct data.
 - Run `vagrant up`.
 - Run `vagrant rsync-auto` to auto sync files as they get saved. This terminal window needs to be up.
 - Run `vagrant ssh` from a new window and `cd /var/www/baxter`
