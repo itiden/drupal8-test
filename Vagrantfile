@@ -60,6 +60,9 @@ Vagrant.configure("2") do |config|
     sudo sed -i 's/display_errors = .*/display_errors = '${php_display_errors}'/' /etc/php5/apache2/php.ini
     sudo sed -i 's/display_startup_errors = .*/display_startup_errors = '${php_display_startup_errors}'/' /etc/php5/apache2/php.ini
 
+    # create database if not exists
+    mysql -uroot -proot -e 'create database if not exists drupal8'
+
     echo "So let's restart apache..."
     sudo service apache2 restart
 
