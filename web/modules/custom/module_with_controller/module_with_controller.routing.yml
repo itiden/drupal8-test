@@ -1,0 +1,8 @@
+
+module_with_controller.default_controller_index:
+  path: '/module_with_controller'
+  defaults:
+    _controller: '\Drupal\module_with_controller\Controller\DefaultController::index'
+    _title: 'Module with controller title'
+  requirements:
+    _permission: 'access content'

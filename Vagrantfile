@@ -5,14 +5,9 @@ Vagrant.configure("2") do |config|
 
   config.vm.box = "scotch/box"
   config.vm.network "private_network", ip: "192.168.4.20"
-  config.vm.hostname = "drupal8.itiden.se"
+  config.vm.hostname = "local.drupal8.itiden.se"
 
-  config.vm.synced_folder ".", "/var/www", type: "rsync",
-    rsync__args: ["--verbose", "--archive", "-z", "--copy-links"],
-    rsync__exclude: [
-      ".git/", ".gitattributes", ".gitmodules", ".gitignore", ".DS_Store", "vendor", ".vagrant"
-    ],
-    rsync__auto: true
+  config.vm.synced_folder ".", "/var/www"
 
   config.vm.provider "virtualbox" do |v|
 
@@ -38,11 +33,21 @@ Vagrant.configure("2") do |config|
     sudo a2ensite local.drupal8.itiden.se.conf
 
     sudo composer self-update
-    if [ ! -f "~/.composer/vendor/drush" ]; then
-      ## Install Drush
-      composer global require drush/drush:dev-master
-      echo 'export PATH=~/.composer/vendor/bin:$PATH' >> ~/.bashrc
-      source ~/.bashrc
+
+    cd ~
+    # Install Drupal Console
+    if [ ! -f "/usr/local/bin/drupal" ]; then
+      curl -LSs http://drupalconsole.com/installer | php
+      sudo mv console.phar /usr/local/bin/drupal
+      drupal init
+    fi
+
+    # Install Drush
+    if [ ! -f "/usr/local/bin/drush" ]; then
+      wget https://github.com/drush-ops/drush/releases/download/8.0.0-rc4/drush.phar
+      chmod +x drush.phar
+      sudo mv drush.phar /usr/local/bin/drush
+      drush init
     fi
 
     ## Set PHP memory limit to 1024M
@@ -62,6 +67,11 @@ Vagrant.configure("2") do |config|
 
     # create database if not exists
     mysql -uroot -proot -e 'create database if not exists drupal8'
+
+    # add hosts
+    if ! grep -q "teamspeak.com" /etc/hosts; then
+      echo '127.0.0.1 local.drupal8.itiden.se' | sudo tee --append /etc/hosts > /dev/null
+    fi
 
     echo "So let's restart apache..."
     sudo service apache2 restart

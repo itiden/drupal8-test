@@ -5,4 +5,6 @@
 - Run `vagrant rsync-auto` to auto sync files as they get saved. This terminal window needs to be up.
 - Run `vagrant ssh` from a new window and `cd /var/www/baxter`
 - Run `composer install` to install everything in the VM.
+
+####If you have access to the demo-server
 - From `/var/www/web` run `drush sql-sync @demo @local` to get a local copy of the database. This command can be run whenever to sync the database with demo.

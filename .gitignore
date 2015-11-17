@@ -17,3 +17,6 @@ web/sites/default/files
 
 # Ignore dotenv file
 .env
+
+# Ignore simpletest files
+web/sites/simpletest
