@@ -1,0 +1,13 @@
+name: Itiden
+type: theme
+description: Itiden Drupal 8 test theme
+package: Other
+core: 8.x
+libraries:
+  - itiden/global
+
+base theme: stable
+regions:
+  main_navigation: 'Main navigation'
+  content: 'Content'
+  footer: 'Footer'

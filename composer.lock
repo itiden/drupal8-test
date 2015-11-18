@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a5048b14b6efa428f35a1aa28fcae6ad",
-    "content-hash": "55c9ce199bbcdd83fcd319e883ca34e8",
+    "hash": "886a92312e04a0b3b96db713a6d98f3d",
+    "content-hash": "d93d484e712b8964c2d3bf1f35ebee32",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -666,12 +666,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/DrupalConsole.git",
-                "reference": "930a549a8f35e0007687d2262cdb46b7271bb867"
+                "reference": "ed60ee4dad9801da6cfe69f7ec1963c53585b43d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/9ac228621a84e0ddba4d95fa6f4e783eb3c052ac",
-                "reference": "930a549a8f35e0007687d2262cdb46b7271bb867",
+                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/ed60ee4dad9801da6cfe69f7ec1963c53585b43d",
+                "reference": "ed60ee4dad9801da6cfe69f7ec1963c53585b43d",
                 "shasum": ""
             },
             "require": {
@@ -742,20 +742,20 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2015-11-13 14:16:37"
+            "time": "2015-11-18 01:53:33"
         },
         {
             "name": "drupal/core",
-            "version": "8.0.0-rc3",
+            "version": "8.0.0-rc4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "1c76457cad8c3ac6265575eba181452f72778dd6"
+                "reference": "579ea858831d4ab1224715656cb37731f239a26e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/1c76457cad8c3ac6265575eba181452f72778dd6",
-                "reference": "1c76457cad8c3ac6265575eba181452f72778dd6",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/579ea858831d4ab1224715656cb37731f239a26e",
+                "reference": "579ea858831d4ab1224715656cb37731f239a26e",
                 "shasum": ""
             },
             "require": {
@@ -782,7 +782,7 @@
                 "symfony/translation": "2.7.*",
                 "symfony/validator": "2.7.*",
                 "symfony/yaml": "2.7.*",
-                "twig/twig": "^1.22.2",
+                "twig/twig": "^1.23.1",
                 "zendframework/zend-diactoros": "~1.1",
                 "zendframework/zend-feed": "~2.4"
             },
@@ -907,7 +907,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2015-11-04 10:15:22"
+            "time": "2015-11-13 11:21:34"
         },
         {
             "name": "drupal/devel",
@@ -915,7 +915,7 @@
             "source": {
                 "type": "git",
                 "url": "http://git.drupal.org/project/devel",
-                "reference": "d913e1d94aff00190e690c09432c607f7a399375"
+                "reference": "fe3e6de67a953866a1b0e5b2227d1daee5586fd9"
             },
             "require": {
                 "drupal/core": "8.*"
@@ -950,7 +950,38 @@
             ],
             "description": "Various blocks, pages, and functions for developers.",
             "homepage": "http://drupal.org/project/devel",
-            "time": "2015-11-08 12:53:50"
+            "time": "2015-11-16 23:48:13"
+        },
+        {
+            "name": "drupal/token",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/token",
+                "reference": "5a36ca581d4c02d0afead767b48263e29af83824"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/token-8.x-1.x-dev.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides a user interface for the Token API and some missing core tokens.",
+            "homepage": "https://www.drupal.org/project/token",
+            "time": "2015-09-25 22:38:37"
         },
         {
             "name": "drush/drush",
@@ -958,12 +989,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "365d1fb5d1555210bf2570ae7304f11589c6a2d2"
+                "reference": "35d0ea642911da0e15af039089d8e4608d259aa7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/6bb5ea5178b5165fdc7a16aecec1626d5ce4e823",
-                "reference": "365d1fb5d1555210bf2570ae7304f11589c6a2d2",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/35d0ea642911da0e15af039089d8e4608d259aa7",
+                "reference": "35d0ea642911da0e15af039089d8e4608d259aa7",
                 "shasum": ""
             },
             "require": {
@@ -1039,7 +1070,7 @@
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-            "time": "2015-11-13 15:32:16"
+            "time": "2015-11-18 14:23:45"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -5106,7 +5137,8 @@
         "drush/drush": 20,
         "drupal/console": 20,
         "drupal/devel": 20,
-        "vlucas/phpdotenv": 20
+        "vlucas/phpdotenv": 20,
+        "drupal/token": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
