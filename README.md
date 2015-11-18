@@ -3,7 +3,7 @@
 - Make a copy of `.env.example` and name it `.env` and add the correct data.
 - Run `vagrant up`.
 - Run `vagrant rsync-auto` to auto sync files as they get saved. This terminal window needs to be up.
-- Run `vagrant ssh` from a new window and `cd /var/www/baxter`
+- Run `vagrant ssh` from a new window and `cd /var/www`
 - Run `composer install` to install everything in the VM.
 
 ####If you have access to the demo-server
