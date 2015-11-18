@@ -5,3 +5,7 @@
   height: 70px;
   display: inline-block;
 }
+
+#block-useraccountmenu {
+  float: right;
+}

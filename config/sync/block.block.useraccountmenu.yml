@@ -1,0 +1,24 @@
+uuid: 43761bc1-00c9-4941-9500-a34b0148f244
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - itiden
+id: useraccountmenu
+theme: itiden
+region: main_navigation
+weight: 1
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }
