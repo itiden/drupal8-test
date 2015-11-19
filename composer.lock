@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dcfb2dd045ffaef2e9ef38079ed17603",
-    "content-hash": "b918afdefc860c13c777fec6e2eaa2df",
+    "hash": "dd97a8b77e1cded4abcbd60cfe098dd0",
+    "content-hash": "a7246815b8e0091caf08f0cf365de3ac",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -661,6 +661,40 @@
             "time": "2014-09-09 13:34:57"
         },
         {
+            "name": "drupal/admin_toolbar",
+            "version": "8.1.10",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/admin_toolbar.git",
+                "reference": "ce0a2f844820473a1b0968abe1d6fb7c92611430"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.10.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/toolbar": "8.*"
+            },
+            "replace": {
+                "drupal/admin_toolbar_tools": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/admin_toolbar_tools"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Admin Toolbar improve the default Drupal Toolbar,it lets the hover of sub menus.",
+            "homepage": "https://www.drupal.org/project/admin_toolbar"
+        },
+        {
             "name": "drupal/console",
             "version": "dev-master",
             "source": {
@@ -746,16 +780,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.0.0-rc4",
+            "version": "8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "579ea858831d4ab1224715656cb37731f239a26e"
+                "reference": "a595eef13ba4625ff842a5986e838c41f6ff98ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/579ea858831d4ab1224715656cb37731f239a26e",
-                "reference": "579ea858831d4ab1224715656cb37731f239a26e",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/a595eef13ba4625ff842a5986e838c41f6ff98ef",
+                "reference": "a595eef13ba4625ff842a5986e838c41f6ff98ef",
                 "shasum": ""
             },
             "require": {
@@ -907,7 +941,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2015-11-13 11:21:34"
+            "time": "2015-11-19 14:02:15"
         },
         {
             "name": "drupal/devel",
@@ -1047,12 +1081,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "e89cfae5347a6294431d7908cfbc402477f54b64"
+                "reference": "3316c14b921e75c837cbfe4ff8fb75758bf89f81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/e89cfae5347a6294431d7908cfbc402477f54b64",
-                "reference": "e89cfae5347a6294431d7908cfbc402477f54b64",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/3316c14b921e75c837cbfe4ff8fb75758bf89f81",
+                "reference": "3316c14b921e75c837cbfe4ff8fb75758bf89f81",
                 "shasum": ""
             },
             "require": {
@@ -1136,7 +1170,7 @@
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-            "time": "2015-11-19 12:14:30"
+            "time": "2015-11-19 14:03:41"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -5257,7 +5291,8 @@
         "vlucas/phpdotenv": 20,
         "drupal/token": 20,
         "drupal/markdown": 20,
-        "drupal/libraries": 20
+        "drupal/libraries": 20,
+        "drupal/admin_toolbar": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
