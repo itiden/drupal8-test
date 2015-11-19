@@ -23,7 +23,8 @@
         "drupal/devel": "8.1.*@dev",
         "vlucas/phpdotenv": "^2.1@dev",
         "drupal/token": "8.1.*@dev",
-        "drupal/markdown": "8.1.*@dev"
+        "drupal/markdown": "8.1.*@dev",
+        "drupal/admin_toolbar": "^8.1"
     },
     "require-dev": {
         "behat/mink": "~1.6",

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "37eee0f878a78e9a25a1f3587f3b69d6",
-    "content-hash": "46ef4ec2f444349cd18b81a5cc4a4f17",
+    "hash": "a010b22df4d922ff6056b3478b78300b",
+    "content-hash": "6329dabcc3264726e44e2e836da02d76",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -659,6 +659,40 @@
                 "parser"
             ],
             "time": "2014-09-09 13:34:57"
+        },
+        {
+            "name": "drupal/admin_toolbar",
+            "version": "8.1.10",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/admin_toolbar.git",
+                "reference": "ce0a2f844820473a1b0968abe1d6fb7c92611430"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.10.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/toolbar": "8.*"
+            },
+            "replace": {
+                "drupal/admin_toolbar_tools": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/admin_toolbar_tools"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Admin Toolbar improve the default Drupal Toolbar,it lets the hover of sub menus.",
+            "homepage": "https://www.drupal.org/project/admin_toolbar"
         },
         {
             "name": "drupal/console",
