@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a010b22df4d922ff6056b3478b78300b",
-    "content-hash": "6329dabcc3264726e44e2e836da02d76",
+    "hash": "dcfb2dd045ffaef2e9ef38079ed17603",
+    "content-hash": "b918afdefc860c13c777fec6e2eaa2df",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -659,40 +659,6 @@
                 "parser"
             ],
             "time": "2014-09-09 13:34:57"
-        },
-        {
-            "name": "drupal/admin_toolbar",
-            "version": "8.1.10",
-            "source": {
-                "type": "git",
-                "url": "http://git.drupal.org/project/admin_toolbar.git",
-                "reference": "ce0a2f844820473a1b0968abe1d6fb7c92611430"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.10.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/core": "8.*",
-                "drupal/toolbar": "8.*"
-            },
-            "replace": {
-                "drupal/admin_toolbar_tools": "self.version"
-            },
-            "suggest": {
-                "drupal/core": "Required by drupal/admin_toolbar_tools"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-8.x-1.x": "8.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "description": "Admin Toolbar improve the default Drupal Toolbar,it lets the hover of sub menus.",
-            "homepage": "https://www.drupal.org/project/admin_toolbar"
         },
         {
             "name": "drupal/console",
@@ -5282,7 +5248,8 @@
         "drupal/devel": 20,
         "vlucas/phpdotenv": 20,
         "drupal/token": 20,
-        "drupal/markdown": 20
+        "drupal/markdown": 20,
+        "drupal/libraries": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
