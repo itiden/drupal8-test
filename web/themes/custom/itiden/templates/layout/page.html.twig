@@ -93,6 +93,13 @@
           </aside>
         {% endif %}
       </main>
+
+      {% if page.footer %}
+        <footer role="contentinfo">
+          {{ page.footer }}
+        </footer>
+      {% endif %}
+
     </div>
     <div class="col-lg-4 col-sm-6">
       <a class="twitter-timeline" href="https://twitter.com/hashtag/celebr8d8" data-widget-id="666920347657220097">#celebr8d8 Tweets</a>
@@ -100,11 +107,5 @@
     </div>
 
   </div>
-
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
 
 </div>{# /.layout-container #}

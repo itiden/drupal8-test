@@ -6,8 +6,8 @@
 - Run `composer install` to install everything in the VM.
 - Make sure `sites/default/files` is writable.
 
-####If something seems broken
-- Test running `drush cache-rebuild`(or `drush cr`) from the `/var/www/web` folder from within your virtual host.
+####Disable caching
+- To disable cache and js/css aggregation in your development environment. Run `cp web/sites/example.settings.local.php web/sites/settings.local.php` from the project root.
 
 ####If you have access to the demo-server
 - From `/var/www/web` run `drush sql-sync @demo @local` to get a local copy of the database. This command can be run whenever to sync the database with demo.
