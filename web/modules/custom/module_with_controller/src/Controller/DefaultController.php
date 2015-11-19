@@ -24,7 +24,7 @@ class DefaultController extends ControllerBase {
   public function index() {
     return [
         '#type' => 'markup',
-        '#markup' => print_r(array_keys(\Drupal::service('user.permissions')->getPermissions()))
+        '#markup' => t('tjohej')
     ];
   }
 

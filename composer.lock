@@ -1047,12 +1047,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "936649985be9554a813e2d276f44bf2e90d83d6a"
+                "reference": "e89cfae5347a6294431d7908cfbc402477f54b64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/26823ecdcf50fb53bd64bbac9004a2a84e718c6e",
-                "reference": "936649985be9554a813e2d276f44bf2e90d83d6a",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/e89cfae5347a6294431d7908cfbc402477f54b64",
+                "reference": "e89cfae5347a6294431d7908cfbc402477f54b64",
                 "shasum": ""
             },
             "require": {
@@ -1124,11 +1124,19 @@
                 {
                     "name": "Christopher Gervais",
                     "email": "chris@ergonlogic.com"
+                },
+                {
+                    "name": "Dave Reid",
+                    "email": "dave@davereid.net"
+                },
+                {
+                    "name": "Damian Lee",
+                    "email": "damiankloip@googlemail.com"
                 }
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-            "time": "2015-11-18 20:24:40"
+            "time": "2015-11-19 12:14:30"
         },
         {
             "name": "easyrdf/easyrdf",
