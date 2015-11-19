@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "886a92312e04a0b3b96db713a6d98f3d",
-    "content-hash": "d93d484e712b8964c2d3bf1f35ebee32",
+    "hash": "37eee0f878a78e9a25a1f3587f3b69d6",
+    "content-hash": "46ef4ec2f444349cd18b81a5cc4a4f17",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -953,6 +953,64 @@
             "time": "2015-11-16 23:48:13"
         },
         {
+            "name": "drupal/libraries",
+            "version": "dev-8.x-3.x",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/libraries",
+                "reference": "52e91afc55235d88879058b45d2e351ff1319dae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/libraries-8.x-3.x-dev.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-3.x": "8.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows version-dependent and shared usage of external libraries.",
+            "homepage": "http://drupal.org/project/libraries",
+            "time": "2015-11-04 20:24:22"
+        },
+        {
+            "name": "drupal/markdown",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/markdown",
+                "reference": "8eb83898816808fe15587ca7ba365475d178614d"
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/libraries": "8.*",
+                "michelf/php-markdown": ">=1.5.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows content to be submitted using Markdown, a simple plain-text syntax that is transformed into valid HTML.",
+            "homepage": "http://drupal.org/project/markdown",
+            "time": "2015-11-19 00:06:16"
+        },
+        {
             "name": "drupal/token",
             "version": "dev-8.x-1.x",
             "source": {
@@ -993,7 +1051,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/936649985be9554a813e2d276f44bf2e90d83d6a",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/26823ecdcf50fb53bd64bbac9004a2a84e718c6e",
                 "reference": "936649985be9554a813e2d276f44bf2e90d83d6a",
                 "shasum": ""
             },
@@ -1829,6 +1887,57 @@
                 "xml"
             ],
             "time": "2015-06-07 08:43:18"
+        },
+        {
+            "name": "michelf/php-markdown",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/michelf/php-markdown.git",
+                "reference": "e1aabe18173231ebcefc90e615565742fc1c7fd9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/e1aabe18173231ebcefc90e615565742fc1c7fd9",
+                "reference": "e1aabe18173231ebcefc90e615565742fc1c7fd9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-lib": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Michelf": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "John Gruber",
+                    "homepage": "http://daringfireball.net/"
+                },
+                {
+                    "name": "Michel Fortin",
+                    "email": "michel.fortin@michelf.ca",
+                    "homepage": "https://michelf.ca/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Markdown",
+            "homepage": "https://michelf.ca/projects/php-markdown/",
+            "keywords": [
+                "markdown"
+            ],
+            "time": "2015-03-01 12:03:08"
         },
         {
             "name": "nikic/php-parser",
@@ -5138,7 +5247,8 @@
         "drupal/console": 20,
         "drupal/devel": 20,
         "vlucas/phpdotenv": 20,
-        "drupal/token": 20
+        "drupal/token": 20,
+        "drupal/markdown": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

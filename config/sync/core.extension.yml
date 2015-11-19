@@ -21,7 +21,9 @@ module:
   history: 0
   image: 0
   language: 0
+  libraries: 0
   link: 0
+  markdown: 0
   menu_ui: 0
   module_with_controller: 0
   node: 0
