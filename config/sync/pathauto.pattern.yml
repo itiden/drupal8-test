@@ -1,8 +1,20 @@
 patterns:
   node:
-    default: '/content/[node:title]'
+    default: '[node:title]'
+    bundles:
+      article:
+        default: ''
+      article_en:
+        default: ''
+      article_sv:
+        default: ''
+      page:
+        default: ''
   taxonomy_term:
     default: '/[term:vocabulary]/[term:name]'
+    bundles:
+      tags:
+        default: ''
   forum:
     default: '/[term:vocabulary]/[term:name]'
   user:
