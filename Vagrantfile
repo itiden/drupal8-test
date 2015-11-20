@@ -68,11 +68,6 @@ Vagrant.configure("2") do |config|
     # create database if not exists
     mysql -uroot -proot -e 'create database if not exists drupal8'
 
-    # add hosts
-    if ! grep -q "teamspeak.com" /etc/hosts; then
-      echo '127.0.0.1 local.drupal8.itiden.se' | sudo tee --append /etc/hosts > /dev/null
-    fi
-
     echo "So let's restart apache..."
     sudo service apache2 restart
 
