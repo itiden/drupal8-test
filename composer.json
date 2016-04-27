@@ -17,7 +17,7 @@
     ],
     "require": {
         "composer/installers": "^1.0.20",
-        "drupal/core": "8.0.*",
+        "drupal/core": "~8.1",
         "drush/drush": "dev-master",
         "drupal/console": "dev-master",
         "drupal/devel": "8.1.*@dev",
@@ -31,8 +31,8 @@
         "behat/mink": "~1.6",
         "behat/mink-goutte-driver": "~1.2",
         "mikey179/vfsStream": "~1.2",
-        "phpunit/phpunit": "~4.8",
-        "symfony/css-selector": "2.7.*"
+        "phpunit/phpunit": "~5.3",
+        "symfony/css-selector": "~2.8"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
